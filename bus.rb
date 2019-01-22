@@ -37,5 +37,11 @@ class Bus
   def find_passenger(passenger_object)
     @passengers_array.include?(passenger_object)
   end
-
+  
+  def empty_bus
+   old_passenger = []
+   old_passenger << (@passengers_array)
+   @passengers_array.clear
+   return @passengers_array
+  end
 end
