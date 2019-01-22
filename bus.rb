@@ -15,7 +15,13 @@ class Bus
   def drive
     return "Weeeeeeee..."
   end
+
   def count_passengers
-    return @passengers_array.count
-  end 
+    return @passengers_array.count # do count function
+  end
+
+  def add_passenger(passenger)
+    @passengers_array << passenger # add passenger parameter to array
+    return count_passengers #calling function from above
+  end
 end

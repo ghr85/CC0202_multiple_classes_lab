@@ -6,11 +6,13 @@
 require('minitest/autorun') #require minitest
 require('minitest/rg') # require minitest colourisation
 require_relative('../bus.rb') # require related source code
+require_relative('../person.rb') # require related source code
 
 class TestBus < MiniTest::Test
 
   def setup
     @bus = Bus.new("22A", "Gretna")
+    @person = Person.new("Sandra Bullock", 38)
   end
 
 
@@ -27,6 +29,10 @@ class TestBus < MiniTest::Test
 
   def test_passengers
     assert_equal(0, @bus.count_passengers) #count method will return only number of array elements
+  end
+
+  def test_add_passenger
+    assert_equal(1, @bus.add_passenger(@person))
   end
 
 end
