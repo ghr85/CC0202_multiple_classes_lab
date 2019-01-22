@@ -17,6 +17,9 @@ def test_get_name
   assert_equal("Keanu Reeves",@person.name)
 end
 
+def test_get_age
+  assert_equal(41,@person.age)
+end
 
 
 end
