@@ -25,13 +25,17 @@ class Bus
     return count_passengers #calling function from above
   end
 
-  def remove_passenger(passenger)
+  def remove_passenger(passenger_object)
     for person_object_element in @passengers_array
-      if person_object_element.name == passenger.name
-        @passengers_array.delete(passenger)
+      if person_object_element.name == passenger_object.name
+        @passengers_array.delete(passenger_object)
+      end
     end
-  end
     return count_passengers #calling function from above
+  end
+
+  def find_passenger(passenger_object)
+    @passengers_array.include?(passenger_object)
   end
 
 end

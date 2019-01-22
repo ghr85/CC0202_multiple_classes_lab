@@ -40,6 +40,9 @@ This time you'll also need to include a class diagram using UML as part of the p
 
 ## Notes
 
+
+* INCLUDE not INSPECT!
+
 Order of approach:
 
 * Write it down on paper first - split it up into attributes and behaviours, understand what needs built.
