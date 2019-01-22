@@ -21,4 +21,8 @@ class TestBus < MiniTest::Test
     assert_equal("Gretna",@bus.destination_string)
   end
 
+  def test_drive
+    assert_equal("Weeeeeeee...",@bus.drive)
+  end
+
 end

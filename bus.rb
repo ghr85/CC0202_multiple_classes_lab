@@ -10,4 +10,8 @@ class Bus
     @route_string = route_string
     @destination_string = destination_string
   end
+
+  def drive
+    return "Weeeeeeee..."
+  end
 end
