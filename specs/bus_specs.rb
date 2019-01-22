@@ -8,4 +8,14 @@ require('minitest/rg') # require minitest colourisation
 require_relative('../bus.rb') # require related source code
 
 class TestBus < MiniTest::Test
-end 
+
+  def setup
+    @bus = Bus.new("22A", "Gretna")
+  end
+
+
+  def test_get_route
+    assert_equal("22A",@bus.route_string)
+  end
+  
+end

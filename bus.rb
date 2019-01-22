@@ -4,4 +4,10 @@
 # Bus Class
 
 class Bus
-end 
+  attr_reader :route_string, :destination_string
+
+  def initialize(route_string,destination_string)
+    @route_string = route_string
+    @destination_string = destination_string
+  end
+end
