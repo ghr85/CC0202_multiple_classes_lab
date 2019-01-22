@@ -17,5 +17,8 @@ class TestBus < MiniTest::Test
   def test_get_route
     assert_equal("22A",@bus.route_string)
   end
-  
+  def test_get_destination
+    assert_equal("Gretna",@bus.destination_string)
+  end
+
 end
