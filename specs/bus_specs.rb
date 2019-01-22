@@ -25,4 +25,8 @@ class TestBus < MiniTest::Test
     assert_equal("Weeeeeeee...",@bus.drive)
   end
 
+  def test_passengers
+    assert_equal(0, @bus.count_passengers) #count method will return only number of array elements
+  end
+
 end

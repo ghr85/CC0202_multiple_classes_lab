@@ -9,9 +9,13 @@ class Bus
   def initialize(route_string,destination_string)
     @route_string = route_string
     @destination_string = destination_string
+    @passengers_array = [] # Doesn't need a paramter as no passengers at initialisation
   end
 
   def drive
     return "Weeeeeeee..."
   end
+  def count_passengers
+    return @passengers_array.count
+  end 
 end
