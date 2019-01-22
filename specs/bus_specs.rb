@@ -12,7 +12,8 @@ class TestBus < MiniTest::Test
 
   def setup
     @bus = Bus.new("22A", "Gretna")
-    @person = Person.new("Sandra Bullock", 38)
+    @person_1 = Person.new("Sandra Bullock", 38)
+    @person_2 = Person.new("Keanu Reeves", 41)
   end
 
 
@@ -32,7 +33,12 @@ class TestBus < MiniTest::Test
   end
 
   def test_add_passenger
-    assert_equal(1, @bus.add_passenger(@person))
+    assert_equal(1, @bus.add_passenger(@person_1))
   end
 
+  def test_remove_passenger
+    @bus.add_passenger(@person_1)
+    @bus.add_passenger(@person_2)
+    assert_equal(1, @bus.remove_passenger(@person_1))
+  end
 end

@@ -24,4 +24,14 @@ class Bus
     @passengers_array << passenger # add passenger parameter to array
     return count_passengers #calling function from above
   end
+
+  def remove_passenger(passenger)
+    for person_object_element in @passengers_array
+      if person_object_element.name == passenger.name
+        @passengers_array.delete(passenger)
+    end
+  end
+    return count_passengers #calling function from above
+  end
+
 end
