@@ -8,4 +8,15 @@ require('minitest/rg') # require minitest colourisation
 require_relative('../person.rb') # require related source code
 
 class TestPerson < MiniTest::Test
+
+def setup
+  @person = Person.new("Keanu Reeves", 41)
+end
+
+def test_get_name
+  assert_equal("Keanu Reeves",@person.name)
+end
+
+
+
 end
