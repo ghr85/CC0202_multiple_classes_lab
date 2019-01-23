@@ -9,5 +9,6 @@ class BusStop
 
   def initialize(name_string)
     @name_string = name_string
+    @queue_array = []
   end
 end

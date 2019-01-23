@@ -32,4 +32,7 @@ class TestBusStop < MiniTest::Test
     assert_equal("Torry Battery", @bus_stop_object.name_string)
   end
 
+  def test_get_queue
+    assert_equal([],@bus_stop_object.queue_array)
+  end
 end
