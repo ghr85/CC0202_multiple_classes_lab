@@ -17,7 +17,7 @@ class Bus
   end
 
   def count_passengers
-    return @passengers_array.count # do count function
+    return @passengers_array.count # do count function (solution gives length)
   end
 
   def add_passenger(passenger)
@@ -37,10 +37,10 @@ class Bus
   def find_passenger(passenger_object)
     @passengers_array.include?(passenger_object)
   end
-  
+
   def empty_bus
-   old_passenger = []
-   old_passenger << (@passengers_array)
+   old_passenger = [] #these functions link into the later bust stop class
+   old_passenger << (@passengers_array) #consider changing to FOR loop to break array within array
    @passengers_array.clear
    return @passengers_array
   end
