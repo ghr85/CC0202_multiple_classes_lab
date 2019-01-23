@@ -28,4 +28,8 @@ class TestBusStop < MiniTest::Test
     @bus_object = Bus.new("22A", "Gretna")
   end
 
+  def test_get_name
+    assert_equal("Torry Battery", @bus_stop_object.name_string)
+  end
+
 end

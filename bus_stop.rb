@@ -4,4 +4,10 @@
 # Bus Stop Class
 
 class BusStop
-end 
+  attr_reader :name_string
+  attr_accessor :queue_array
+
+  def initialize(name_string)
+    @name_string = name_string
+  end
+end
